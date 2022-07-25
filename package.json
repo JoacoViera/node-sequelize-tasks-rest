@@ -1,0 +1,28 @@
+{
+  "name": "sequelize-tasks-rest",
+  "version": "1.0.0",
+  "description": "Rest API for CRUD tasks using Sequelize",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoacoViera/node-sequelize-tasks-rest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoacoViera/node-sequelize-tasks-rest/issues"
+  },
+  "homepage": "https://github.com/JoacoViera/node-sequelize-tasks-rest#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.3"
+  }
+}
