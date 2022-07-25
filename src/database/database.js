@@ -1,4 +1,4 @@
-import Sequelize from 'sequelize';
+import { Sequelize } from 'sequelize';
 
 const {
   DB_HOST, DB_USER, DB_PASSWORD, DB_NAME,
