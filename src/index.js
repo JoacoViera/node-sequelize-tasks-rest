@@ -1,5 +1,5 @@
-import app from './app.js'
+import app from './app.js';
 
-const port = 8000
-app.listen(port)
-console.log('Server listening on port', port)
+const port = 8000;
+app.listen(port);
+console.log('Server listening on port', port);
