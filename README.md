@@ -7,3 +7,4 @@ Rest API for CRUD tasks using Sequelize
 - Node.js
 - Sequelize
 - PostgreSQL
+- pnpm
