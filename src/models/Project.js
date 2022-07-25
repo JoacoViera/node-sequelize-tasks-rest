@@ -6,7 +6,7 @@ export const Project = sequelize.define('projects', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
-    autoincrement: true,
+    autoIncrement: true,
   },
   name: {
     type: DataTypes.STRING,
