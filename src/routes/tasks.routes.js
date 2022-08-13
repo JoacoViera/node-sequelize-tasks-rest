@@ -5,10 +5,10 @@ import {
 
 const router = Router();
 
-router.get('/projects', getTasks);
-router.post('/projects', createTask);
-router.put('/projects/:id', updateTask);
-router.delete('/projects/:id', deleteTask);
-router.get('/projects/:id', getTask);
+router.get('/tasks', getTasks);
+router.post('/tasks', createTask);
+router.put('/tasks/:id', updateTask);
+router.delete('/tasks/:id', deleteTask);
+router.get('/tasks/:id', getTask);
 
 export default router;

@@ -5,7 +5,7 @@ export const Task = sequelize.define('task', {
   id: {
     type: DataTypes.INTEGER,
     primaryKey: true,
-    autoincrement: true,
+    autoIncrement: true,
   },
   name: {
     type: DataTypes.STRING,

@@ -22,15 +22,15 @@ export const getTask = async (req, res) => {
 };
 
 export const createTask = async (req, res) => {
-  const { name, priority, description } = req.body;
+  const { name, done, projectId } = req.body;
 
   try {
-    const newProject = await Task.create({
+    const newTask = await Task.create({
       name,
-      description,
-      priority,
+      done,
+      projectId,
     });
-    return res.json(newProject);
+    return res.json(newTask);
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
@@ -39,16 +39,12 @@ export const createTask = async (req, res) => {
 export const updateTask = async (req, res) => {
   try {
     const { id } = req.params;
-    const { name, priority, description } = req.body;
 
-    const project = await Task.findByPk(id);
+    const task = await Task.findOne({ where: { id } });
 
-    project.name = name;
-    project.priority = priority;
-    project.description = description;
-
-    await project.save();
-    return res.json(project);
+    task.set(req.body);
+    await task.save();
+    return res.json(task);
   } catch (error) {
     return res.status(500).json({ message: error.message });
   }
